@@ -730,15 +730,15 @@ a {
   height: 327px; /* Adjust as needed */
   z-index: 1;
 }
-
+/*
 .recommendations .overlap-2 {
   position: relative;
-  width: 100%; /* Use 100% for responsiveness */
-  height: 327px; /* Adjust as needed */
+  width: 100%; 
+  height: 327px; 
   z-index: 1;
-  display: flex; /* Enable flexbox layout */
-  overflow: hidden; /* Hide overflow for the carousel effect */
-}
+  display: flex; 
+  overflow: hidden; 
+} */
 
 .page .recommendations-wrapper {
   display: flex;
@@ -3933,4 +3933,104 @@ h3 {
   .page .contact-information {
     width: 100%; /* Make the contact information section full width */
   }
+}
+
+.carousell, .carousel-cell {
+  font-family: 'Inter', sans-serif;
+}
+.carousell {
+  
+  background-color: #f0f0f6;
+}
+
+.carousel-cell {
+  width: 340px;
+  height: 327.1px;
+  margin-right: 20px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  margin-right: 50px; /* Increased margin to add gap */
+  background: white; /* Changed background color to white */
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* 1. Stars */
+.stars {
+  width: 145.62px;
+  height: 17.6px;
+  text-align: left;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 20px; /* Align at the top */
+  left: 10;
+  font-size: 14px;
+  color: gold; /* Set stars color to gold */
+}
+
+
+/* 2. h2 heading */
+.carousel-cell h2 {
+  width: 133.3px;
+  height: 44.6px;
+  margin-top: 40px; /* Spacing below stars */
+  text-align: left;
+  margin-left:5px;
+  font-size: 18px;
+  margin-left: 40px; /* Move paragraph to the right */
+  margin-bottom: 10px;
+  font-size: 18px; /* Set paragraph font size to 15px */
+}
+
+/* 3. Paragraph */
+.carousel-cell p {
+  width: 293.48px;
+  height: 90.21px;
+  margin-top: 0;
+  text-align: left;
+  font-size: 14px;
+  font-size: 15px; /* Set paragraph font size to 15px */
+}
+
+/* 4. Image */
+.carousel-cell img {
+  width: 89.61px;
+  height: 81.09px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  border-radius: 50%; /* If you want the image to be circular */
+}
+
+/* 5. Author name */
+.carousel-cell strong {
+  width: 131.06px;
+  height: 44.6px;
+  position: absolute;
+  bottom: 10px;
+  left: 100px; /* Aligning to the right of the image */
+  font-size: 14px;
+  font-size: 18px; /* Set paragraph font size to 15px */
+}
+
+/* Adding space between name and job title */
+.carousel-cell p {
+  line-height: 1.5; /* Adjust line height for better spacing */
+}
+
+.carousel-cell br {
+  display: block; /* Ensure br is displayed */
+  content: "";
+  margin-top: 5px; /* Add margin to create space below the author name */
+}
+.flickity-page-dots .dot {
+  background: yellow; /* Set dots color to yellow */
 }

@@ -8,6 +8,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
     <div class="page">
@@ -234,102 +237,58 @@
         </div>
         <div class="carousel">
           <div class="overlap-2">
-            <div class="recommendations-wrapper">
-              <div class="recommendation-carousel">
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="rectangle-3"></div>
-                    <!-- Review 1 -->
-                    <div class="swiper-slide">
-                      <div class="review">
-                        <div class="overlap-group-2">
-                          <div class="amazing-work">Great Quality!</div>
-                          <p class="lorem-ipsum-dolor-2">
-                            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
-                            Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra
-                            Morbi. Morbi Donec Amet....
-                          </p>
-                          <div class="text-wrapper-6">James Gouse</div>
-                          <div class="text-wrapper-7">Graphic Designer</div>
-                        </div>
-                        <img
-                          class="rating"
-                          src="https://c.animaapp.com/bKBXDrmE/img/profile@2x.png"
-                        />
-                        <img class="profile" src="assets/img/Profile_2.png" />
-                      </div>
-                    </div>
+<!-- Flickity HTML init -->
+<div class="carousell" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell">
+    <img src="assets/img/Profile_2.png" alt="Reviewer 1">
+    <div class="stars">★★★★★</div>
+    <h2>Great Quality!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+    <p><strong>James Gouse</strong><br>Graphic Designer</p>
 
-                    <!-- Review 2 -->
-                    <div class="swiper-slide">
-                      <div class="review">
-                        <div class="overlap-group-2">
-                          <div class="amazing-work">Amazing Work!</div>
-                          <p class="lorem-ipsum-dolor-2">
-                            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
-                            Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra
-                            Morbi. Morbi Donec Amet....
-                          </p>
-                          <div class="text-wrapper-6">Tiana Philips</div>
-                          <div class="text-wrapper-7">Photographer</div>
-                        </div>
-                        <img
-                          class="rating"
-                          src="https://c.animaapp.com/bKBXDrmE/img/profile@2x.png"
-                        />
-                        <img class="profile" src="/assets/img/Profile_2.png" />
-                      </div>
-                    </div>
+  </div>
+  <div class="carousel-cell">
+    <img src="assets/img/Profile_3.png" alt="Reviewer 2">
+    <div class="stars">★★★★★</div>
+    <h2>Amazing Work!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+    <p><strong>Tiana Philips</strong><br>Photographer</p>
+  </div>
+  
+  <div class="carousel-cell">
+    <img src="assets/img/Profile_1.png" alt="Reviewer 3">
+    <div class="stars">★★★★★</div>
+    <h2>Great Quality!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+    <p><strong>Talan Westervelt</strong><br>Business Man</p>
 
-                    <!-- Review 3 -->
-                    <div class="swiper-slide">
-                      <div class="review">
-                        <div class="overlap-group-2">
-                          <div class="amazing-work">Great Quality!</div>
-                          <p class="lorem-ipsum-dolor-2">
-                            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
-                            Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra
-                            Morbi. Morbi Donec Amet....
-                          </p>
-                          <div class="text-wrapper-6">Talan Westervelt</div>
-                          <div class="text-wrapper-7">Business Man</div>
-                        </div>
-                        <img
-                          class="rating"
-                          src="https://c.animaapp.com/bKBXDrmE/img/profile@2x.png"
-                        />
-                        <img class="profile" src="assets/img/Profile_2.png" />
-                      </div>
-                    </div>
+  </div>
+  <div class="carousel-cell">
+    <img src="assets/img/Profile_2.png" alt="Reviewer 1">
+    <div class="stars">★★★★★</div>
+    <h2>Great Quality!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+    <p><strong>James Gouse</strong><br>Graphic Designer</p>
 
-                    <!-- Review 4 -->
-                    <div class="swiper-slide">
-                      <div class="review">
-                        <div class="overlap-group-2">
-                          <div class="amazing-work">Amazing Work!</div>
-                          <p class="lorem-ipsum-dolor-2">
-                            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
-                            Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra
-                            Morbi. Morbi Donec Amet....
-                          </p>
-                          <div class="text-wrapper-6">Tiana Philips</div>
-                          <div class="text-wrapper-7">Photographer</div>
-                        </div>
-                        <img
-                          class="rating"
-                          src="https://c.animaapp.com/bKBXDrmE/img/profile@2x.png"
-                        />
-                        <img class="profile" src="assets/img/Profile_2.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              class="rectangle-4"
-              src="assets/img/Rectangle_95.png"
-            />
+  </div>
+  <div class="carousel-cell">
+    <img src="assets/img/Profile_3.png" alt="Reviewer 2">
+    <div class="stars">★★★★★</div>
+    <h2>Amazing Work!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+    <p><strong>Tiana Philips</strong><br>Photographer</p>
+  </div>
+  
+  <div class="carousel-cell">
+    <img src="assets/img/Profile_1.png" alt="Reviewer 3">
+    <div class="stars">★★★★★</div>
+    <h2>Great Quality!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+    <p><strong>Talan Westervelt</strong><br>Business Man</p>
+
+  </div>
+
+</div>
           </div>
         </div>
         <!-------------------------->
@@ -547,7 +506,31 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript">
+      $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        
+        wrapAround:true,
+        freeScroll:true,
+
+      });
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      // Initialize Flickity
+      var elem = document.querySelector('.carousell');
+      var flkty = new Flickity( elem, {
+        wrapAround: true,      // Enables wrap-around
+        autoPlay: 800,        // Slides automatically every 3 seconds (3000ms)
+        pageDots: true,        // Display dots navigation
+        prevNextButtons: false // Hide previous/next buttons if not needed
+      });
+    </script>
+    
   </body>
 </html>
